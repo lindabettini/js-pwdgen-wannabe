@@ -8,22 +8,28 @@ console.log('JS OK');
 5. Infine stampa sulla pagina nomecognomecolorepreferito21
 */
 
-// ç Chiediamo il nome 
+// Chiediamo il nome 
 const userName = prompt('Come ti chiami?');
 console.log(userName);
 
-// ç Chiediamo il cognome 
+// Chiediamo il cognome 
 const userSurname = prompt('Quale è il tuo cognome?');
 console.log(userSurname);
 
-// ç Chiediamo il colore preferito
+// Chiediamo il colore preferito
 const userFavColor = prompt('Quale è il tuo colore preferito?');
 console.log(userFavColor);
 
-// ç aggiungiamo anno alla fine della password
+// aggiungiamo anno alla fine della password
 const year = '21';
 console.log(year);
 
-// ç Creiamo la password
-const password = userName + userSurname + userFavColor + year;
-console.log(password);
+// Creiamo la password
+const userPassword = userName + userSurname + userFavColor + year;
+console.log(userPassword);
+
+// Recupero elemento in cui stampare
+const finalpasswordElement = document.getElementById('finalpassword');
+
+// Stampiamo la password
+finalpasswordElement.innerText = userPassword;
