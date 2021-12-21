@@ -31,7 +31,7 @@ const userPassword = userName + userSurname + userFavColor + year;
 console.log(userPassword);
 
 // 6.Recupero elemento in cui stampare
-const finalpasswordElement = document.getElementById('finalpassword');
+const displaypasswordElement = document.getElementById('finalpassword');
 
 // 7.Stampiamo la password
-finalpasswordElement.innerText = userPassword;
+displaypasswordElement.innerText = userPassword;
